@@ -96,8 +96,9 @@ public class MainActivity extends AppCompatActivity {
 
                 Gson gson = new Gson();
                beers = Arrays.asList(gson.fromJson(reader, Beer[].class));
-
+//              feito assim por vir dados duplicados no json
                 gambiarra();
+
                 Beer.onCreate(DAO.getHelper(getApplicationContext()).getWritableDatabase());
                 DAO.getHelper(getApplicationContext()).salvar(beers);
 
@@ -114,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void gambiarra(){
-
+//para tirar dados duplicados
             List<Beer> auxBeer = new ArrayList<>();
 
 

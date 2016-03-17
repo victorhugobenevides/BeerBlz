@@ -30,7 +30,7 @@ public class Beer implements DAO.IDAO{
 
     @Override
     public ContentValues getContentValues() {
-        // TODO Auto-generated method stub
+
         ContentValues contentvalues = new ContentValues();
 
 

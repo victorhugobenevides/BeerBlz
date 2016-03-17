@@ -62,8 +62,7 @@ public class beerAdapter extends RecyclerView.Adapter<beerAdapter.ViewHolder>  {
 
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
-        // - get element from your dataset at this position
-        // - replace the contents of the view with that element
+
         holder.name.setText(beers.get(position).name);
         holder.country.setText("Country: " + beers.get(position).country);
         holder.category.setText("Category: " + beers.get(position).category);
@@ -82,7 +81,7 @@ public class beerAdapter extends RecyclerView.Adapter<beerAdapter.ViewHolder>  {
 
     }
 
-    // Return the size of your dataset (invoked by the layout manager)
+
     @Override
     public int getItemCount() {
         return beers.size();
